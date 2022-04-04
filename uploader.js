@@ -11,7 +11,7 @@ const url = 'https://api.monday.com/v2/file';
 /// This is your mutation query - can also be adapted to send files to file columns instead
 const query = 'mutation add_file($file: File!, $updateId: Int!) {add_file_to_update(update_id: $updateId, file: $file) {id}}'
 
-/// These are the variables you are sending. Can be adapted to a call that would add the file to a file oclumn instead;
+/// These are the variables you are sending. Can be adapted to a call that would add the file to a file column instead;
 var vars = {"updateId":967485603};
 
 ///This is the mapping for the API call, where you specify that a variable should be considered as the variables[file] of the request. 
